@@ -28,7 +28,7 @@ for analyzing a repository are therefore predominantly dictated by whatever
 
 `git log` performs reasonably fast even for large repositories: with git
 version 2.1.4, analysis of the Linux repository (with more than 500.000
-commits)takes about 7 seconds on my medium-equipped test machine.
+commits) takes about 7 seconds on a rather slow test machine.
 
 
 ## Notes
@@ -42,8 +42,7 @@ commits)takes about 7 seconds on my medium-equipped test machine.
 
 * It is not uncommon for an author to use different email addresses over
   time. Hence, authors are distinguished by their name only (specifically, by
-  the git data field `%an`). Clearly, the resulting output might need higher
-  intelligence for meaningful interpretation, such as for detecting duplicates.
+  the git data field `%an`).
 
 * The output of `git log` may contain byte sequences that are invalid in the
   UTF-8 codec. These get replaced with a question mark in the output. For
@@ -56,6 +55,6 @@ commits)takes about 7 seconds on my medium-equipped test machine.
   recent git releases. Remove it from the command line if you observe a
   corresponding error.
  
-* If there appears to be an author with a semicolon in his/her name, you'll
-  manage to use a different separator.
+* If this script breaks because it came across an author with a semicolon in
+  his/her name, then blame Little Bobby Tables' mom (https://xkcd.com/327).
 
