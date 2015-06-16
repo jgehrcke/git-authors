@@ -1,10 +1,12 @@
 A micro Python script for listing the authors in a git repository sorted by
 the time of their first contribution. Traits:
 
-
 * Properly deals with the byte stream emitted by `git log`.
 * Supports Python 2.7 and 3.4.
 * Supports Linux and Windows.
+
+This has been created mainly for educational purposes. Please read
+[the corresponding article on my blog](https://gehrcke.de/2015/06/git-list-authors-sorted-by-the-time-of-their-first-contribution/).
 
 
 ## Usage
